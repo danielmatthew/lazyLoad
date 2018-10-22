@@ -2,8 +2,11 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from "vue";
 import App from "./App";
+import LazyLoadDirecitve from "./directives/lazyLoadDirective";
 
 Vue.config.productionTip = false;
+
+Vue.directive("lazyLoad", LazyLoadDirecitve);
 
 /* eslint-disable no-new */
 new Vue({
