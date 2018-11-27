@@ -1,18 +1,13 @@
 <template>
-  <div id="app">
-    <ImageItem />
-    <HelloWorld/>
-  </div>
+  <div id="app"><ImageItem source="http://placehold.it/50/50" /></div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld";
 import ImageItem from "./components/ImageItem";
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
     ImageItem
   }
 };
